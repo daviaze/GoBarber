@@ -1,0 +1,10 @@
+const { resolve } = require('path');
+
+module.exports = {
+    config: resolve(_dirname, 'src', 'config', 'database.js'),
+    'models-path': resolve(_dirname, 'src', 'app', 'models'),
+    'migrations-path': resolve(_dirname, 'src', 'database', 'migrations'),
+    'seeders-path': resolve(_dirname, 'src', 'database', 'seeds')
+
+
+}
